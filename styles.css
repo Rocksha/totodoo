@@ -1,0 +1,95 @@
+
+*{
+        font-weight:normal;
+}
+body{
+    text-align:center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color:#333;
+    background:url('images/bg2.jpeg') no-repeat;
+    background-size:cover;
+}
+#container{
+    width:90%;
+    background-color:rgba(255,255,255,0.9);
+    margin:0 auto;
+}
+#container h1{
+    padding:20px 0 0;
+}
+#list{
+    margin:5px 20px 100px;
+}
+ul{
+    margin: 0 auto;
+    float:left;
+    padding:0;
+    list-style:none;
+    position:relative;
+    left:80px;
+    width: 12%;
+}
+
+#list li{
+    background:none;
+    border:none;
+    margin:0;
+    padding:5px 0;
+}
+#list li:hover{
+    background-color:#dddbdb;
+}
+#list li:active{
+    transform:rotate(2deg);
+
+}
+
+#list li.day{
+    padding:8px;
+    background-color:#333;
+    color:white;
+    border-right:1px solid white;
+}
+#list li.day:hover, 
+#list li.day:active{
+    cursor:pointer;
+    transform:none;
+    background:none;
+}
+#list li.addItem:hover,
+#list li.addItem:active{
+    background:none;
+    transform:none;
+}
+#deleter{
+    
+}
+#list li.addItem{
+    position:absolute;
+    top:4px;
+    display:none;
+    padding:0;
+    margin:0;
+}
+
+#list ul:hover li.addItem{
+    display:block;
+
+}
+#list li.addItem input{
+    margin:0;
+    width:90%;
+    padding: 1px 4px;
+    box-sizing:border-box;
+}
+#list .emptySpace{
+    background:#f9d35e;
+    border: dashed 1px black;
+    height:20px;
+}
+#list:after{
+    content:"";
+    display:table;
+    clear:both;
+}
