@@ -12,6 +12,7 @@ body{
 }
 #container{
     width:90%;
+    height:90vh;
     background-color:rgba(255,255,255,0.9);
     margin:0 auto;
 }
@@ -36,6 +37,7 @@ ul{
     border:none;
     margin:0;
     padding:5px 0;
+    text-align:left;
 }
 #list li:hover{
     background-color:#dddbdb;
@@ -50,6 +52,7 @@ ul{
     background-color:#333;
     color:white;
     border-right:1px solid white;
+    text-align:center;
 }
 #list li.day:hover, 
 #list li.day:active{
@@ -57,20 +60,23 @@ ul{
     transform:none;
     background:none;
 }
-#list li.addItem:hover,
-#list li.addItem:active{
-    background:none;
-    transform:none;
-}
-#deleter{
-    
-}
 #list li.addItem{
     position:absolute;
     top:4px;
     display:none;
     padding:0;
     margin:0;
+    text-align:center;
+}
+#list li.addItem:hover,
+#list li.addItem:active{
+    background:none;
+    transform:none;
+}
+#deleter{
+   position:absolute;
+   top:70vh;
+   left:85vw;
 }
 
 #list ul:hover li.addItem{
