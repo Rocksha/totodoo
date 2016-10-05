@@ -1,3 +1,4 @@
+$(document).tooltip();
 $("ul li").draggable();
 $("#list ul").sortable({
     items:"li:not('.day, .addItem')",
