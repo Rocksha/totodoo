@@ -1,17 +1,24 @@
+//enable tooltip
 $(document).tooltip();
-$("ul li").draggable();
+//make items draggable
+$("li.listItems").draggable({
+    containment:"#container",
+    scroll:false
+});
+
 $("#list ul").sortable({
     items:"li:not('.day, .addItem')",
     connectWith:"ul",
     dropOnEmpty: true,
-    placeholder:"emptySpace"
+    placeholder:"emptySpace",
+    containment:"#container"
 });
 
 
 $(".addItem input").keydown(function(e){
     if (e.keyCode == 13){
         var item = $(this).val();
-        $(this).parent().parent().append('<li>'+item+'</li>');
+        $(this).parent().parent().append('<li class="listItems">'+item+'</li>');
         $(this).val("");
     }
 });
